@@ -1,1 +1,1 @@
-{"version":3,"file":"mars_rover.js","sourceRoot":"","sources":["../mars_rover.ts"],"names":[],"mappings":";;;AAAa,QAAA,EAAE,GAAG,UAAC,OAAe;IAChC,OAAO,EAAC,MAAM,EAAE,GAAG,EAAC,CAAC;AACvB,CAAC,CAAA"}
+{"version":3,"file":"mars_rover.js","sourceRoot":"","sources":["../mars_rover.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAa,QAAA,EAAE,GAAG,UAAC,OAAe,EAAE,KAAS;IAC3C,6BAAW,KAAK,KAAE,MAAM,EAAE,GAAG,IAAE;AACjC,CAAC,CAAA"}
