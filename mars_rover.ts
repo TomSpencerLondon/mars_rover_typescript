@@ -1,3 +1,3 @@
-export const go = (command: string) => {
-  return {facing: 'E'};
+export const go = (command: string, rover: {}) => {
+  return {...rover, facing: 'E'};
 }
