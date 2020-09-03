@@ -13,6 +13,9 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.go = void 0;
 exports.go = function (command, rover) {
-    return __assign(__assign({}, rover), { facing: 'E' });
+    if (rover.facing == 'N') {
+        return __assign(__assign({}, rover), { facing: 'E' });
+    }
+    return __assign(__assign({}, rover), { facing: 'S' });
 };
 //# sourceMappingURL=mars_rover.js.map
