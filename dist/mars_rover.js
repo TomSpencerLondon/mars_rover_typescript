@@ -13,6 +13,8 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.go = void 0;
 exports.go = function (command, rover) {
+    var compass = ['N', 'E', 'S', 'W'];
+    return __assign(__assign({}, rover), { facing: compass[(compass.indexOf(rover.facing) + 1)] });
     if (rover.facing == 'N') {
         return __assign(__assign({}, rover), { facing: 'E' });
     }
