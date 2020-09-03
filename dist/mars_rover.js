@@ -16,6 +16,9 @@ exports.go = function (command, rover) {
     if (rover.facing == 'N') {
         return __assign(__assign({}, rover), { facing: 'E' });
     }
-    return __assign(__assign({}, rover), { facing: 'S' });
+    else if (rover.facing == 'E') {
+        return __assign(__assign({}, rover), { facing: 'S' });
+    }
+    return __assign(__assign({}, rover), { facing: 'W' });
 };
 //# sourceMappingURL=mars_rover.js.map

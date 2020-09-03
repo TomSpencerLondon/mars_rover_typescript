@@ -12,4 +12,10 @@ describe('Mars Rover', () => {
     rover = go('R', rover);
     expect(rover.facing).toBe('S');
   });
+
+  it('turns right from S to W', () => {
+    let rover = {facing: 'S'};
+    rover = go('R', rover);
+    expect(rover.facing).toBe('W');
+  })
 });
