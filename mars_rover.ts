@@ -1,6 +1,6 @@
 export const go = (command: string, rover: {facing}) => {
   const compass = ['N', 'E', 'S', 'W'];
-  return {...rover, facing: compass[(compass.indexOf(rover.facing) + 1)]}
+  return {...rover, facing: compass[(compass.indexOf(rover.facing) + 1) % 4]}
 
   if (rover.facing == 'N'){
     return {...rover, facing: 'E'};

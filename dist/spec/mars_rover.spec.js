@@ -17,5 +17,10 @@ describe('Mars Rover', function () {
         rover = mars_rover_1.go('R', rover);
         expect(rover.facing).toBe('W');
     });
+    it('turns from W back to N', function () {
+        var rover = { facing: 'W' };
+        rover = mars_rover_1.go('R', rover);
+        expect(rover.facing).toBe('N');
+    });
 });
 //# sourceMappingURL=mars_rover.spec.js.map

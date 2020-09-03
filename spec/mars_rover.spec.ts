@@ -18,4 +18,10 @@ describe('Mars Rover', () => {
     rover = go('R', rover);
     expect(rover.facing).toBe('W');
   })
+
+  it('turns from W back to N', () => {
+    let rover = {facing: 'W'};
+    rover = go('R', rover);
+    expect(rover.facing).toBe('N');
+  })
 });
