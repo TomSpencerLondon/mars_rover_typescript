@@ -4,7 +4,9 @@ var mars_rover_1 = require("../mars_rover");
 describe('Mars Rover', function () {
     [
         { facing: 'N', endsFacing: 'E' },
-        { facing: 'E', endsFacing: 'S' }
+        { facing: 'E', endsFacing: 'S' },
+        { facing: 'S', endsFacing: 'W' },
+        { facing: 'W', endsFacing: 'N' }
     ].forEach(function (_a) {
         var facing = _a.facing, endsFacing = _a.endsFacing;
         it('turns right from N to E', function () {
@@ -12,11 +14,6 @@ describe('Mars Rover', function () {
             rover = mars_rover_1.go(endsFacing, rover);
             expect(rover.facing).toBe(endsFacing);
         });
-    });
-    it('turns right from S to W', function () {
-        var rover = { facing: 'S' };
-        rover = mars_rover_1.go('R', rover);
-        expect(rover.facing).toBe('W');
     });
     it('turns from W back to N', function () {
         var rover = { facing: 'W' };
