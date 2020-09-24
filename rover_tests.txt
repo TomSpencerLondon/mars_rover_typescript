@@ -1,0 +1,25 @@
+Turning right
+N to E
+E to S
+S to W
+W to N
+
+Turn left
+N to W
+W to S
+S to E
+E to N
+
+Moving forward
+N
+E
+S
+W
+
+Moving backward
+N
+E
+S
+W
+
+Mapping instructions

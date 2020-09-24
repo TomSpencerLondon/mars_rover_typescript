@@ -1,4 +1,5 @@
-export const go = (command: string, rover: {facing}) => {
+
+export const right = (command: string, rover: {facing}) => {
   const compass = ['N', 'E', 'S', 'W'];
   return {...rover, facing: compass[(compass.indexOf(rover.facing) + 1) % 4]}
 
@@ -10,3 +11,4 @@ export const go = (command: string, rover: {facing}) => {
 
   return {...rover, facing: 'W'};
 }
+
